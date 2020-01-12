@@ -6,9 +6,12 @@
 * [Git](https://git-scm.com/)
 * Éditeur de code (exemple Atom, Sublime)
 
+Pour Python, il faut assurer que les environment variables pour `python` et `pip` sont bien configurés (pour Windows, il faut taper "Environment Variables" dans start bar)
+
 ## Démarrage du site web
 
 **Installation des dépendances**
+Dans un Terminal (par exemple cmd):
 ```
 pip install -r requirements txt
 ```
@@ -22,6 +25,7 @@ python app.py
 ```
 http://localhost:5000
 ```
+Vous devriez voir un message d'accueil!
 
 ## Description du repository
 
