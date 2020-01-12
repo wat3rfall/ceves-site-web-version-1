@@ -1,6 +1,25 @@
 # ceves-site-web-version-1
 
+## Programmes à installer
+
+* [Python 3.7+](https://www.python.org/downloads/)
+* [Git](https://git-scm.com/)
+* Éditeur de code (exemple Atom, Sublime)
+
+Pour Python, il faut assurer que les environment variables pour `python` et `pip` sont bien configurés (pour Windows, il faut taper "Environment Variables" dans start bar)
+
 ## Démarrage du site web
+
+**Cloner le site web**
+Dans un Terminal (par exemple cmd):
+Pour cloner le GitHub du site web:
+```
+git clone https://github.com/wat3rfall/ceves-site-web-version-1.git
+```
+Pour se glisser dans la branche `dev/main`:
+```
+git checkout dev/main
+```
 
 **Installation des dépendances**
 ```
@@ -13,9 +32,11 @@ python app.py
 ```
 
 **Accès au site web via localhost**
+Tapez dans le bar URL d'un browser (exemple Google Chrome):
 ```
 http://localhost:5000
 ```
+Vous devriez voir un message d'accueil!
 
 ## Description du repository
 
