@@ -23,7 +23,7 @@ git checkout dev/main
 
 **Installation des dépendances**
 ```
-pip install -r requirements txt
+pip3 install -r requirements.txt
 ```
 
 **Démarrage du site web**
