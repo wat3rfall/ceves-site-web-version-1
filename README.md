@@ -6,6 +6,8 @@
 * [Git](https://git-scm.com/)
 * Éditeur de code (exemple Atom, Sublime)
 
+Pour Python, il faut assurer que les environment variables pour `python` et `pip` sont bien configurés (pour Windows, il faut taper "Environment Variables" dans start bar)
+
 ## Démarrage du site web
 
 **Installation des dépendances**
