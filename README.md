@@ -1,1 +1,69 @@
 # ceves-site-web-version-1
+
+## Démarrage du site web
+
+**Installation des dépendances**
+```
+pip install -r requirements txt
+```
+
+**Démarrage du site web**
+```
+python app.py
+```
+
+**Accès au site web via localhost**
+```
+http://localhost:5000
+```
+
+## Description du repository
+
+**Dossiers**
+
+**src**: dossier avec du code Python
+
+**static**: dossier avec le contenu statique
+
+**-css**: dossier avec les fichiers CSS
+
+**-img**: dossier avec des images
+
+**templates**: dossier avec les pages HTML
+
+**Fichiers**
+
+*app.py*: fichier Python principal
+
+*README.md*: fichier avec des renseignements sur le projet
+
+*requirements.txt*: fichier avec les dépendances
+
+## Commandes Git
+
+Quelques commandes de base utiles
+
+Télécharger le site web
+`git clone https://github.com/wat3rfall/ceves-site-web-version-1.git`
+
+Vérifier la nature d'une branche git
+`git status`
+
+Créer une nouvelle branche
+`git branch <nom de ta nouvelle branche>`
+
+Changer de branche
+`git checkout <nom de la branche à changer>`
+
+Ajouter des fichiers modifiés
+`git add .` pour tous les fichiers modifés
+`git add <nom de fichier ou dossier>` pour certains fichiers modifiés
+
+Sauvegarder les fichiers modifiés (avec commit)
+`git commit -m <message de commit>`
+
+Pousser des modifications à une branche particulière
+`git push <nom de branche>`
+
+Et sur GitHub, on peut faire:
+* des *pull request* pour des requêtes de fusionner des branches
