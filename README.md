@@ -9,6 +9,7 @@
 ## Démarrage du site web
 
 **Installation des dépendances**
+Dans un Terminal (par exemple cmd):
 ```
 pip install -r requirements txt
 ```
@@ -22,6 +23,7 @@ python app.py
 ```
 http://localhost:5000
 ```
+Vous devriez voir un message d'accueil!
 
 ## Description du repository
 
