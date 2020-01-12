@@ -1,5 +1,11 @@
 # ceves-site-web-version-1
 
+## Programmes à installer
+
+* [Python 3.7+](https://www.python.org/downloads/)
+* [Git](https://git-scm.com/)
+* Éditeur de code (exemple Atom, Sublime)
+
 ## Démarrage du site web
 
 **Installation des dépendances**
