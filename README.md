@@ -10,10 +10,20 @@ Pour Python, il faut assurer que les environment variables pour `python` et `pip
 
 ## Démarrage du site web
 
-**Installation des dépendances**
+**Cloner le site web**
 Dans un Terminal (par exemple cmd):
+Pour cloner le GitHub du site web:
 ```
-pip install -r requirements txt
+git clone https://github.com/wat3rfall/ceves-site-web-version-1.git
+```
+Pour se glisser dans la branche `dev/main`:
+```
+git checkout dev/main
+```
+
+**Installation des dépendances**
+```
+pip3 install -r requirements.txt
 ```
 
 **Démarrage du site web**
@@ -22,6 +32,7 @@ python app.py
 ```
 
 **Accès au site web via localhost**
+Tapez dans le bar URL d'un browser (exemple Google Chrome):
 ```
 http://localhost:5000
 ```
