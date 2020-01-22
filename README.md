@@ -16,20 +16,23 @@ Pour cloner le GitHub du site web:
 ```
 git clone https://github.com/wat3rfall/ceves-site-web-version-1.git
 ```
-Pour se glisser dans la branche `dev/main`:
+Pour entrer dans le nouveau dossier:
 ```
-git checkout dev/main
+cd ceves-site-web-version-1
 ```
+
 
 **Installation des dépendances**
 ```
 pip3 install -r requirements.txt
 ```
+Essaie `pip` si `pip3` ne marche pas.
 
 **Démarrage du site web**
 ```
-python app.py
+python3 app.py
 ```
+Essaie `python` si `python3` ne marche pas.
 
 **Accès au site web via localhost**
 Tapez dans le bar URL d'un browser (exemple Google Chrome):
