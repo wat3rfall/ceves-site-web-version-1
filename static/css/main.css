@@ -58,6 +58,12 @@ section img{
     height: auto;
 }
 
+.carousel-caption{
+    background-color: rgba(0, 0, 0, 0.7);
+    border-radius: 10px;
+
+}
+
 .a-propos{
     display: flex;
     flex-direction: column;
