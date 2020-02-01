@@ -1,51 +1,8 @@
 # ceves-site-web-version-1
 
-## Programmes à installer
-
-* [Python 3.7+](https://www.python.org/downloads/)
-* [Git](https://git-scm.com/)
-* Éditeur de code (exemple Atom, Sublime)
-
-Pour Python, il faut assurer que les environment variables pour `python` et `pip` sont bien configurés (pour Windows, il faut taper "Environment Variables" dans start bar)
-
-## Démarrage du site web
-
-**Cloner le site web**
-Dans un Terminal (par exemple cmd):
-Pour cloner le GitHub du site web:
-```
-git clone https://github.com/wat3rfall/ceves-site-web-version-1.git
-```
-Pour entrer dans le nouveau dossier:
-```
-cd ceves-site-web-version-1
-```
-
-
-**Installation des dépendances**
-```
-pip3 install -r requirements.txt
-```
-Essaie `pip` si `pip3` ne marche pas.
-
-**Démarrage du site web**
-```
-python3 app.py
-```
-Essaie `python` si `python3` ne marche pas.
-
-**Accès au site web via localhost**
-Tapez dans le bar URL d'un browser (exemple Google Chrome):
-```
-http://localhost:5000
-```
-Vous devriez voir un message d'accueil!
-
 ## Description du repository
 
 **Dossiers**
-
-**src**: dossier avec du code Python
 
 **static**: dossier avec le contenu statique
 
@@ -53,15 +10,14 @@ Vous devriez voir un message d'accueil!
 
 **-img**: dossier avec des images
 
-**templates**: dossier avec les pages HTML
+**templates**: dossier avec les pages HTML (archives, utilisé seulement pour référence)
 
 **Fichiers**
 
-*app.py*: fichier Python principal
+*index.html*: page d'accueil en HTML
 
 *README.md*: fichier avec des renseignements sur le projet
 
-*requirements.txt*: fichier avec les dépendances
 
 ## Commandes Git
 
