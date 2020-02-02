@@ -1,123 +1,168 @@
 /* Importer les polices*/
-@font-face{
+@font-face {
     font-family: "Akzidenz";
     src: url("../fonts/Akzidenz/Akzidenz-grotesk-light.ttf");
 }
 
-@font-face{
+@font-face {
     font-family: "Objective";
     src: url("../fonts/Objective/Objective_OTF/Objective-Medium.otf");
 }
 
-@font-face{
+@font-face {
     font-family: "Avenir";
     src: url("../fonts/Avenir/AvenirLTStd-Book.otf");
 }
 
 
 
-/* Le CSS est mobile first*/ 
-body{
+/* Le CSS est mobile first*/
+body {
     height: 300vh;
     width: 100vw;
     font-family: "Avenir";
 }
- 
 
- 
-.content{
-	/*padding-top: 2%;
+
+
+.content {
+    /*padding-top: 2%;
 	padding-bottom: 5%;
 	padding-left: 5%;
 	padding-right: 5%;*/
 
-	display: flex;
-	flex-direction: column;
-	height: 100%;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
 }
 
 
-section{
+section {
     height: 85%;
     background-color: #137425;
+
 }
 
-section img{
+section img {
     border-radius: 3px;
-    -webkit-box-shadow: -1px 9px 24px -1px rgba(0,0,0,0.2);
-    -moz-box-shadow: -1px 9px 24px -1px rgba(0,0,0,0.2);
-    box-shadow: -1px 9px 24px -1px rgba(0,0,0,0.2);
+    -webkit-box-shadow: -1px 9px 24px -1px rgba(0, 0, 0, 0.2);
+    -moz-box-shadow: -1px 9px 24px -1px rgba(0, 0, 0, 0.2);
+    box-shadow: -1px 9px 24px -1px rgba(0, 0, 0, 0.2);
 }
 
 
-#myCarousel{
+#myCarousel {
     width: 100%;
+
 }
 
-.carousel-item img{
-    height: auto;
+#carouselContain {
+    background: rgb(19,116,37);
+    background: -moz-linear-gradient(0deg, rgba(19,116,37,1) 0%, rgba(63,172,64,1) 110%);
+    background: -webkit-linear-gradient(0deg, rgba(19,116,37,1) 0%, rgba(63,172,64,1) 110%);
+    background: linear-gradient(0deg, rgba(19,116,37,1) 0%, rgb(91, 190, 45) 110%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#137425",endColorstr="#3fac40",GradientType=1);
+
+    background-image: url("../img/photos/motif\ copy.jpg");
+    
 }
 
-.carousel-caption{
+.carousel-indicators{
+    margin: 0;
+}
+
+.carousel-caption {
+    /* Définition de la transition CSS */
+    transition-property: all;
+    transition-duration: 0.35s;
+
+    /* Propriétés à animer stade début */
+    color: rgb(255, 255, 255);
     background-color: rgba(0, 0, 0, 0.7);
+    transform: scale(1, 1);
+    transform-origin: center bottom;
+
     border-radius: 10px;
 
 }
 
-.a-propos{
+.carousel-item:hover .carousel-caption {
+    /* Propriétés à animer stade fin */
+    color: rgb(104, 214, 70);
+    background-color: rgba(0, 0, 0, 0.9);
+    transform: scale(1.1, 1.1);
+}
+
+
+.a-propos {
     display: flex;
     flex-direction: column;
     justify-content: space-around;
 
-    
+
     padding: 1.5em;
     box-sizing: border-box;
 }
 
-.a-propos a{
+.a-propos a {
     text-decoration: underline;
 }
 
-.a-propos:nth-child(even){
-    background-color: rgb(235, 235, 235);   
+.a-propos:nth-child(even) {
+    background-color: rgb(235, 235, 235);
     color: black;
 }
 
-.a-propos:nth-child(even) a{
+.a-propos:nth-child(even) a {
     color: rgb(83, 167, 0);
 }
 
-.a-propos:nth-child(odd){
-    background-color: #137425; 
+.a-propos:nth-child(odd) {
+    background-color: #137425;
     color: white;
 }
 
-.a-propos:nth-child(odd) a{
+.a-propos:nth-child(odd) a {
     color: chartreuse;
 }
 
-.a-propos p{
+.a-propos p {
     text-align: justify;
 }
 
-.a-propos .texte, .a-propos img{
-	width: 100%;
-	
+.a-propos .texte,
+.a-propos img {
+    width: 100%;
+
 }
 
-.a-propos img{
-	height: auto;
+.a-propos img {
+    height: auto;
 }
 
-.reven ol{
-	list-style-type: upper-roman;
+.reven ol {
+    list-style-type: upper-roman;
 }
 
-.reven ol li{
-	margin-bottom: .8em;
+.reven ol li {
+    margin-bottom: .8em;
 }
 
-footer{
+.faq {
+    padding: 1.5em;
+}
+
+.faq .texte {
+    margin-left: 1.5em;
+    width: 90%;
+    text-align: justify;
+}
+
+.faq .texte p {
+    font-size: 1em;
+}
+
+footer {
     height: 15%;
     background-color: #fe4445;
 }
@@ -126,97 +171,103 @@ footer{
 
 
 /* Media Queries pour Tablettes */
-@media (min-width: 620px){
-    section{
+@media (min-width: 620px) {
+    section {
         height: 85%;
-        
+
     }
 
-    section p{
+    section p {
         font-size: 0.8em;
     }
 
-    h2{
+    h2 {
         font-size: 1.5em;
     }
 
-    #myCarousel{
+    #myCarousel {
         width: 100%;
     }
 
-    .a-propos{
+    .a-propos {
         flex-direction: row;
     }
 
-    .a-propos:nth-child(even) .texte{
+    .a-propos:nth-child(even) .texte {
         margin-right: 1.5em;
         order: 0;
     }
-    
-    .a-propos:nth-child(odd) .texte{
+
+    .a-propos:nth-child(odd) .texte {
         margin-left: 1.5em;
         order: 1;
     }
 
-    .a-propos .texte, .a-propos img{
+    .a-propos .texte,
+    .a-propos img {
         width: 50%;
     }
 
 
 
-    footer{
+    footer {
         background-color: blueviolet;
     }
 }
 
 /* Media Queries pour Grands Écrans */
-@media (min-width: 960px){
+@media (min-width: 960px) {
 
-    
-     
-     section{
+
+
+    section {
         height: 85%;
-         
-     }
 
-     section h2{
-         font-size: 2em;
-     }
+    }
 
-     section p{
-         font-size: 1.2em;
-     }
-     
-    #myCarousel{
-         width: 60%;
-         margin: 0 auto;
-         margin-top: 1.5em;
-         margin-bottom: 1.5em;
-     }
+    section h2 {
+        font-size: 2em;
+    }
 
-     .a-propos img{
+    section p {
+        font-size: 1.2em;
+    }
+
+    #myCarousel {
+        width: 60%;
+        margin: 0 auto;
+        ;
+    }
+
+    #carouselContain {
+        padding-top: 1.5em;
+        padding-bottom: 1.5em
+    }
+
+    .a-propos img {
         /*height: 400px;*/
     }
-     
 
-    .a-propos:nth-child(even) .texte{
+
+    .a-propos:nth-child(even) .texte {
         margin-left: 1em;
         order: 0;
     }
-    
-    .a-propos:nth-child(odd) .texte{
+
+    .a-propos:nth-child(odd) .texte {
         margin-right: 1em;
         order: 1;
     }
 
-    
+    .faq .texte {
+        width: 65%;
+    }
 
-    footer{
+
+
+    footer {
         background-color: darkcyan;
     }
-     
-     
+
+
 }
-
-
-
