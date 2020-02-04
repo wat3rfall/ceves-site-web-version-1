@@ -1,0 +1,119 @@
+//PAR ARIANE B.
+
+//A METTRE DANS LE HEAD
+
+<script>
+		let divNode = null;
+		let animationCounter = 0;
+		let closed = false;
+
+		window.addEventListener("load", () => {
+			divNode = document.querySelector(".pop-up");
+
+			let date = new Date();
+			console.log(date.getTime());
+
+			divNode.onsubmit = () => {
+				divNode.style.display = "none";
+			} 
+
+			tick();
+		});
+
+		const tick = () => {
+			animationCounter++;
+			// offsetTop, offsetLeft, offsetWidth, offsetHeight...
+			let pos = divNode.offsetTop + 1;
+			divNode.style.top = (pos > 100 ? 100 : pos) + "px";
+			
+			if (pos > 100 && !closed )
+			{
+			divNode.style.opacity= 0.9;
+			}
+
+			window.requestAnimationFrame(tick); // 60fps
+		}
+		
+		function closepopup(){
+		
+			divNode.style.display="none";
+			closed = true;
+			console.log("bonheur et alégresse");
+		
+		}
+		
+	</script>
+
+	<style>
+		.pop-up {
+			left:50%;
+			margin-left:-150px;
+			position: fixed;
+			top:-250px;
+			font-size: 1.3em;
+			background-color:green;
+			text-align: center;
+			position:fixed;
+		
+			width:250px;
+			opacity:0;
+			padding: 1em;
+			height: 270px;
+			border-radius: 5%;
+		}
+		
+		.pop-up h2{
+			font-size:1em;
+			display:inline;
+			padding-right:1em;
+			color:f8f9fa;
+		}
+		
+		.pop-up input{
+			margin-right : 1em;
+			}
+		
+		.pop-up p{
+			margin-top:0px;
+			padding-top:0px;
+			color:f8f9fa;
+		}
+		
+		.btn_inscription{	
+		color:f8f9fa;
+	}	
+
+	.close-pop-up{
+		position:absolute;
+		right:1px;
+		bottom:0px;
+		margin:0.5em;
+		}
+
+@media (min-width: 960px){
+
+	.pop-up{
+		width:600px;
+		margin-left:-300px;
+	}
+}
+
+</size>
+
+
+//A METTRE DANS LE HTML
+
+<div class ="pop-up">
+		<p> Vous voulez qu'on vous tienne au courant des avancées de la CEVES? Inscrivez-vous à notre bulletin d'information pour ne rien manquer!</p>
+		<form action="accueil.html" method="POST">
+		
+			<h2>Courriel : </h2>
+			<input type="text" name="Courriel" >
+		
+	<button type="submit" class="btn_inscription">Ajoutez-moi à la liste!</button>
+	
+
+		</form>
+	<button class="close-pop-up" type="button" onclick="closepopup()">Non merci </button>
+	</div>
+
