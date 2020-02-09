@@ -42,6 +42,248 @@
     <meta name="description"
         content="Il est plus que temps d'agir. Rejoignez la CEVES, un collectif étudiant se battant contre la crise climatique !" />
 
+    <style type="text/css">
+        /* Importer les polices*/
+@font-face {
+    font-family: "Akzidenz";
+    src: url("../fonts/Akzidenz/Akzidenz-grotesk-light.ttf");
+}
+
+@font-face {
+    font-family: "Objective";
+    src: url("../fonts/Objective/Objective_OTF/Objective-Medium.otf");
+}
+
+@font-face {
+    font-family: "Avenir";
+    src: url("../fonts/Avenir/AvenirLTStd-Book.otf");
+}
+
+
+html {
+    /* smooth scroll */
+  scroll-behavior: smooth;
+}
+
+/* Le CSS est mobile first*/
+body {
+    padding-top: 70px; /* pour fixed navar*/
+    height: 300vh;
+    width: 100vw;
+    font-family: "Avenir";
+}
+
+
+nav{
+    box-shadow: 0 19px 20px -20px rgba(0,0,0,.1);
+}
+
+.content {
+    /*padding-top: 2%;
+    padding-bottom: 5%;
+    padding-left: 5%;
+    padding-right: 5%;*/
+
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+
+section {
+    height: 70%;
+    background-color: #137425;
+
+}
+
+section img {
+    border-radius: 3px;
+    -webkit-box-shadow: -1px 9px 24px -1px rgba(0, 0, 0, 0.2);
+    -moz-box-shadow: -1px 9px 24px -1px rgba(0, 0, 0, 0.2);
+    box-shadow: -1px 9px 24px -1px rgba(0, 0, 0, 0.2);
+}
+
+
+
+
+.a-propos {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+
+
+    /*padding: 1.5em;*/
+    padding-top: 5%;
+    padding-bottom: 5%;
+    padding-left: 7%;
+    padding-right: 7%;
+    box-sizing: border-box;
+}
+
+.a-propos a {
+    text-decoration: underline;
+}
+
+.a-propos:nth-child(even) {
+    background-color: rgb(235, 235, 235);
+    color: black;
+}
+
+.a-propos:nth-child(even) a {
+    color: rgb(83, 167, 0);
+}
+
+.a-propos:nth-child(odd) {
+    background-color: #137425;
+    color: white;
+}
+
+.a-propos:nth-child(odd) a {
+    color: chartreuse;
+}
+
+.a-propos p {
+    text-align: justify;
+}
+
+.a-propos .texte,
+.a-propos img {
+    height: 100%;
+    width: 100%;
+
+}
+
+.reven ol {
+    list-style-type: upper-roman;
+}
+
+.reven ol li {
+    margin-bottom: .8em;
+}
+
+.faq {
+    padding-top: 5%;
+    padding-bottom: 5%;
+    padding-left: 7%;
+    padding-right: 7%;}
+
+.faq .texte {
+    margin-left: 1.5em;
+    width: 90%;
+    text-align: justify;
+}
+
+.faq .texte p {
+    font-size: 1em;
+}
+
+footer {
+    height: 15%;
+    background-color: #fe4445;
+}
+
+
+
+
+/* Media Queries pour Tablettes */
+@media (min-width: 620px) {
+    section {
+        height: 85%;
+
+    }
+
+    section p {
+        font-size: 0.8em;
+    }
+
+    h2 {
+        font-size: 1.5em;
+    }
+
+    #myCarousel {
+        width: 100%;
+    }
+
+    .a-propos {
+        flex-direction: row;
+    }
+
+    .a-propos:nth-child(even) .texte {
+        margin-right: 1.5em;
+        order: 0;
+    }
+
+    .a-propos:nth-child(odd) .texte {
+        margin-left: 1.5em;
+        order: 1;
+    }
+
+    .a-propos .texte,
+    .a-propos img {
+        width: 50%;
+    }
+
+
+
+    footer {
+        background-color: blueviolet;
+    }
+}
+
+/* Media Queries pour Grands Écrans */
+@media (min-width: 960px) {
+
+
+
+    section {
+        height: 85%;
+
+    }
+
+    section h2 {
+        font-size: 2em;
+    }
+
+    section p {
+        font-size: 1.2em;
+    }
+
+    #myCarousel {
+        width: 60%;
+        margin: 0 auto;
+        ;
+    }
+
+    #carouselContain {
+        padding-top: 1.5em;
+        padding-bottom: 1.5em
+    }
+
+
+    .a-propos:nth-child(even) .texte {
+        margin-left: 1em;
+        order: 0;
+    }
+
+    .a-propos:nth-child(odd) .texte {
+        margin-right: 1em;
+        order: 1;
+    }
+
+    .faq .texte {
+        width: 65%;
+    }
+
+
+
+    footer {
+        background-color: darkcyan;
+    }
+
+
+}
+    </style>
+
 </head>
 
 <body>
@@ -78,7 +320,7 @@
 			<a class="nav-link" href="/documents">Documents</a>
 		</li> -->
                 <li class="nav-item">
-                    <a class="nav-link" href="#revendications">Revendications</a>
+                    <a class="nav-link" href="#revendication">Revendication</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="#faq">FAQ</a>
@@ -115,19 +357,19 @@
                                 <img class="d-block w-100" src="static/img/photos/AlbertLouis.jpg"
                                     alt="interviewAlbert">
                                 <div class="carousel-caption">
-                                    <h3>Conférence de presse</h3>
-                                    <p>4 février 2020</p>
+                                    <h3>4 février 2020</h3>
+                                    <p>Conférence de presse : Lancement de la Coalition étudiante pour un virage environnemental et social</p>
                                 </div>
                             </a>
                         </div>
 
                         <div class="carousel-item">
                             <a href="#" target="blank"> <!-- Lien vers un doc parlant de la mob mobile -->
-                                <img class="d-block w-100" src="static/img/photos/C45.jpg" alt="mobMobile">
+                                <img class="d-block w-100" src="static/img/photos/Mobmobile.jpg" alt="mobMobile">
                             
                             <div class="carousel-caption">
-                                <h3>Mob-Mobile</h3>
-                                <p>À venir!</p>
+                                <h3>Invitez la Mobmobile</h3>
+                                <p>Une dizaine de militant.e.s prêt.e.s à venir soutenir votre campus.</p>
                             </div>
                             </a>
                         </div>
@@ -138,20 +380,20 @@
                                 <img class="d-block w-100" src="static/img/photos/IMG_7485_edited.jpg"
                                     alt="congresCeves">
                                 <div class="carousel-caption">
-                                    <h3>Bilan Bi-Annuel</h3>
-                                    <p>En date du 30 novembre 2019</p>
+                                    <h3>Activités de l'automne</h3>
+                                    <p>Découvrez les activités de la coalition à l'automne</p>
                                 </div>
                             </a>
                         </div>
 
 
                         <div class="carousel-item">
-                            <a href="#" target="blank">
+                            <a href="https://www.yoyomolo.com/ceves---semaine-de-la-transition" target="blank">
                                 <!-- Lien vers la plateforme de socio-financement (à compléter) -->
                                 <img class="d-block w-100" src="static/img/photos/Die-in17mai.jpg" alt="dieInMontreal">
                                 <div class="carousel-caption">
-                                    <h3>Campagne de financement</h3>
-                                    <p>4 février 2020</p>
+                                    <h3>Campagne de socio-financement</h3>
+                                    <p>Appuyez la lutte</p>
                                 </div>
                             </a>
                         </div>
@@ -176,28 +418,23 @@
                         le pétrole et le gaz du sol, de violer les territoires ancestraux des Premières Nations
                         autochtones, d’ancrer nos économies dans l’extraction des ressources premières d’Afrique ou
                         d’Amérique du Sud.<raph> C'est devant cette incohérence que nous, jeunes et moins jeunes de
-                            partout au Québec, avons décidé de nous rassembler sous un même mouvement. </raph><br>
-                        <!-- <br><a href="">En savoir plus...</a> -->
+                        partout au Québec, avons décidé de nous rassembler sous un même mouvement. </raph><br> <br>
                     </p>
                 </div>
-                <img src="static/img/photos/27quebec.jpg" alt="Manif 27 septembre 2019 à Québec">
+                <img src="static/img/photos/C18.JPG" alt="Manif 27 septembre 2019 à Québec">
             </div>
 
             <div class="a-propos">
                 <div class="texte">
                     <h2><b>Qui sommes-nous ?</b></h2>
-                    <p>Les populations étudiantes secondaires, collégiales et universitaires du Québec s’unissent pour
-                        réclamer des actions collectives radicales.
-                        La Coalition Étudiante pour un Virage Environnemental et Social (CEVES) rassemble ces
-                        étudiant.e.s de partout au Québec qui ont transformé leur peur en actions collectives. La
-                        justice
+                    <p>Les populations étudiantes secondaires, collégiales et universitaires du Québec s’unissent pour réclamer des actions collectives radicales.
+                        La Coalition étudiante pour un virage environnemental et social (CEVES) rassemble ces
+                        étudiant.e.s de partout au Québec qui ont transformé leur peur en actions collectives. La justice
                         environnementale doit nous amener à changer profondément notre société, dès maintenant. <br>
-                        <br> En nous alliant à tous ceux et celles qui partagent cette vision - peuples autochtones,
+                        <br> En nous alliant à tous ceux et toutes celles qui partagent cette vision - peuples autochtones,
                         associations étudiantes, centre de recherche, organisations environnementales et sociales - nous
-                        voulons ancrer notre démarche dans des principes d'inclusivité et de démocratie. Nous pensons
-                        que nous
-                        pourrons dépasser l’individualisme et proposer un modèle de société qui nous ressemble.
-                        <!-- . <br> <br><a href="">En savoir plus...</a></p> -->
+                        voulons ancrer notre démarche dans des principes d'inclusivité et de démocratie. Nous pensons que nous
+                        pourrons dépasser l’individualisme et proposer un modèle de société libéré des oppressions sur la terre et les êtres qui l'habitent. </p>                        <!-- . <br> <br><a href="">En savoir plus...</a></p> -->
                 </div>
                 <img src="static/img/photos/DecLpsuPLF.jpg" alt="Manif 27 septembre 2019 Montréal">
             </div>
@@ -208,59 +445,52 @@
                     <p>La CEVES adopte une approche combative, souhaitant mettre en oeuvre une escalade de moyens de
                         pression permettant la défense de la justice environnementale. S’imposant désormais comme un des
                         plus gros mouvements sociaux au Québec, elle a notamment organisé des événements à grande
-                        échelle, comme les Marches pour le Climat du 15 mars et du 27 septembre, diverses manifestations
-                        locales, des occupations ou des Zones d’occupations festives, tout en continuant d’alimenter les
+                        échelle, comme les marches pour le climat du 15 mars et du 27 septembre, diverses manifestations
+                        locales ainsi que des occupations, tout en continuant d’alimenter les
                         réflexions au sein des diverses bases militantes. <br> <br><!-- <a href="">En savoir plus...</a> -->
                     </p>
                 </div>
-                <img src="static/img/photos/manifestation19avril2019_felixbosse-9.jpg"
+                <img src="http://www.ceves.ca/static/img/photos/manifestation19avril2019_f%C3%A9lixboss%C3%A9-9.jpg"
                     alt="Léo levant le poing dans la foule à la manif du 27 septembre 2019, Montréal">
             </div>
 
-            <div class="a-propos reven" id="revendications">
+            <div class="a-propos reven" id="revendication">
                 <div class="texte" id="large">
-                    <h2><b>Nos revendications</b></h2>
+                    <h2><b>Notre revendication</b></h2>
                     <!-- Faire un OL/Li avec cette section , parce que c'est clairement ça, en fait-->
 
                     <p>
-                        Concrètement, la CEVES revendique :
-                        La mise en place immédiate d’un plan d’urgence climatique s’adressant aux gouvernements, aux
+                        Concrètement, la CEVES revendique la mise en place immédiate d’un plan d’urgence climatique s’adressant aux gouvernements, aux
                         entreprises, aux institutions éducatives et aux autres acteurs de la sphère publique. Ce plan
-                        doit s’ancrer fermement dans les six principes suivants :
+                        doit s’ancrer fermement dans les sept principes suivants : 
                     </p>
 
                     <ol>
                         <li>Respecter la science et les savoirs autochtones;</li>
                         <li>L’adoption d’une loi climatique qui, par des cibles annuelles contraignantes, forcerait
-                            l’atteinte de la carboneutralité en 2030 et la réduction des émissions de gaz à effets de
-                            serre
-                            à un niveau équitable face au reste de la population mondiale selon sa capacité de rétention
-                            de
-                            carbone, la taille de sa population et son historique de pays colonisateur et industriel du
-                            Nord
+                            l’atteinte de la carboneutralité en 2030 et la réduction des émissions de gaz à effets de serre
+                            à un niveau équitable face au reste de la population mondiale selon sa capacité de rétention de
+                            carbone, la taille de sa population et son historique de pays colonisateur et industriel du Nord
                             Global;</li>
                         <li>Exiger la mise en œuvre complète de la Déclaration des Nations unies sur les droits des
                             peuples autochtones, jusqu’à consultation des communautés autochtones concernées;</li>
-                    </ol>
+                    </ol>                
                 </div>
                 <div class="texte">
                     <ol start="4">
                         <li>Assurer la protection des communautés vulnérables du Canada, particulièrement des
                             communautés racisées qui sont touchées disproportionnellement par la crise climatique;</li>
                         <li>Œuvrer en collaboration avec les populations du globe qui sont disproportionnellement
-                            affectées par la crise climatique en reconnaissant la responsabilité historique du Canada
-                            envers
+                            affectées par la crise climatique en reconnaissant la responsabilité historique du Canada envers
                             ces populations;</li>
                         <li>Exiger la mise en œuvre à tous les paliers d’éducation de la Stratégie québécoise
-                            d’éducation en matière d’environnement et d’écocitoyenneté développée par la Coalition
-                            Éducation, Environnement, Écocitoyenneté;</li>
+                            d’éducation en matière d’environnement et d’écocitoyenneté développée par la <a href="https://www.coalition-education-environnement-ecocitoyennete.org/" target="blank">
+                            Coalition Éducation, Environnement, Écocitoyenneté</a>;</li>
                         <li>Exiger un arrêt complet et immédiat de tout projet d’exploration, d’exploitation et de
-                            transport d’hydrocarbures en parallèle à des formations professionnelles visant à faciliter
-                            la
+                            transport d’hydrocarbures en parallèle à des formations professionnelles visant à faciliter la
                             mobilité et le transfert de la main d’œuvre des secteurs concernés vers ceux des énergies
                             renouvelables.</li>
                     </ol>
-                    <!-- <a href="">En savoir plus...</a> -->
                 </div>
             </div>
 
