@@ -20,7 +20,7 @@ footer a {
 }
 
 .footer-titre {
-    color: #fff;
+    color: rgb(0, 0, 0);
     font-size: 1.4rem;
     padding-bottom: 0.6rem;
 }
@@ -29,6 +29,7 @@ footer a {
     padding: 1.25rem 1.9rem;
     display: flex;
     flex-wrap: wrap;
+    background-color: inherit;
 }
 
 .footer-liste-item {
@@ -38,6 +39,8 @@ footer a {
 
 .footer-icons {
     padding: 0 2rem 1rem;
+    background-color: inherit;
+    
 }
 
 .footer-icons-li {
