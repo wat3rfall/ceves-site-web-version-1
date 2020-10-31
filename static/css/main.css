@@ -64,17 +64,7 @@ section img {
 
 }
 
-.carousel-inner .carousel-item:nth-child(1){
-    background-image: url("../img/photos/banderole_SdT.jpg");
-}
 
-.carousel-inner .carousel-item:nth-child(2){
-    background-image: url("../img/photos/IMG_7485_edited.jpg");
-}
-
-.carousel-inner .carousel-item:nth-child(3){
-    background-image: url("../img/photos/Die-in17mai.jpg");
-}
 
 
 #carouselContain {
@@ -113,6 +103,20 @@ section img {
     height: 32rem;
     border-radius: 3px;
     background-size: 65rem;
+    
+}
+
+.carousel-inner .carousel-item:nth-child(1){
+    background-image: url("http://www.ceves.ca/static/img/photos/banderole_SdT.jpg");
+}
+
+.carousel-inner .carousel-item:nth-child(2){
+    background-image: url("http://www.ceves.ca/static/img/photos/IMG_7485_edited.jpg");
+}
+
+.carousel-inner .carousel-item:nth-child(3){
+    background-image: url("http://www.ceves.ca/static/img/photos/Die-in17mai.jpg");
+    
     
 }
 
