@@ -64,6 +64,19 @@ section img {
 
 }
 
+.carousel-inner .carousel-item:nth-child(1){
+    background-image: url("../img/photos/banderole_SdT.jpg");
+}
+
+.carousel-inner .carousel-item:nth-child(2){
+    background-image: url("../img/photos/IMG_7485_edited.jpg");
+}
+
+.carousel-inner .carousel-item:nth-child(3){
+    background-image: url("../img/photos/Die-in17mai.jpg");
+}
+
+
 #carouselContain {
     background: rgb(19,116,37);
     background: -moz-linear-gradient(0deg, rgba(19,116,37,1) 0%, rgba(63,172,64,1) 110%);
@@ -94,6 +107,13 @@ section img {
 
     border-radius: 10px;
 
+}
+
+.carousel-item{
+    height: 32rem;
+    border-radius: 3px;
+    background-size: 65rem;
+    
 }
 
 .carousel-item:hover .carousel-caption {
