@@ -21,47 +21,53 @@
     <link rel="canonical" href="http://www.laceves.org/index.html">
 
     <link rel="stylesheet" href="static/css/normalize.css" />
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" href="static/css/main.css" type="text/css" />
     <link rel="stylesheet" href="static/css/footer.css">
     <link rel="icon" href="static/img/logo_ceves_1.jpg" />
 
 
-    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous">
-    </script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous">
-    </script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous">
-    </script>
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+        integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous">
+        </script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous">
+        </script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+        integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous">
+        </script>
 
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta charset="UTF-8">
-    <meta name="description" content="Il est plus que temps d'agir. Rejoignez la CEVES, un collectif étudiant se battant contre la crise climatique !" />
+    <meta name="description"
+        content="Il est plus que temps d'agir. Rejoignez la CEVES, un collectif étudiant se battant contre la crise climatique !" />
 
     <style type="text/css">
         /* Importer les polices*/
-        
+
         @font-face {
             font-family: "Akzidenz";
             src: url("../fonts/Akzidenz/Akzidenz-grotesk-light.ttf");
         }
-        
+
         @font-face {
             font-family: "Objective";
             src: url("../fonts/Objective/Objective_OTF/Objective-Medium.otf");
         }
-        
+
         @font-face {
             font-family: "Avenir";
             src: url("../fonts/Avenir/AvenirLTStd-Book.otf");
         }
-        
+
         html {
             /* smooth scroll */
             scroll-behavior: smooth;
         }
+
         /* Le CSS est mobile first*/
-        
+
         body {
             padding-top: 70px;
             /* pour fixed navar*/
@@ -69,11 +75,11 @@
             width: 100vw;
             font-family: "Avenir";
         }
-        
+
         nav {
             box-shadow: 0 19px 20px -20px rgba(0, 0, 0, .1);
         }
-        
+
         .content {
             /*padding-top: 2%;
     padding-bottom: 5%;
@@ -83,19 +89,19 @@
             flex-direction: column;
             height: 100%;
         }
-        
+
         section {
             height: 70%;
             background-color: #137425;
         }
-        
+
         section img {
             border-radius: 3px;
             -webkit-box-shadow: -1px 9px 24px -1px rgba(0, 0, 0, 0.2);
             -moz-box-shadow: -1px 9px 24px -1px rgba(0, 0, 0, 0.2);
             box-shadow: -1px 9px 24px -1px rgba(0, 0, 0, 0.2);
         }
-        
+
         .a-propos {
             display: flex;
             flex-direction: column;
@@ -107,134 +113,164 @@
             padding-right: 7%;
             box-sizing: border-box;
         }
-        
+
+        section .a-propos h2 {
+            font-size: 4.5vw;
+        }
+
+        section .a-propos p {
+            font-size: 3.5vw;
+        }
+
         .a-propos a {
             text-decoration: underline;
         }
-        
+
         .a-propos:nth-child(even) {
             background-color: rgb(235, 235, 235);
             color: black;
         }
-        
+
         .a-propos:nth-child(even) a {
             color: rgb(83, 167, 0);
         }
-        
+
         .a-propos:nth-child(odd) {
             background-color: #137425;
             color: white;
         }
-        
+
         .a-propos:nth-child(odd) a {
             color: chartreuse;
         }
-        
+
         .a-propos p {
             text-align: justify;
         }
-        
+
         .a-propos .texte,
         .a-propos img {
             height: 100%;
             width: 100%;
         }
-        
+
         .reven ol {
             list-style-type: upper-roman;
         }
-        
+
         .reven ol li {
             margin-bottom: .8em;
         }
-        
+
         .faq {
             padding-top: 5%;
             padding-bottom: 5%;
             padding-left: 7%;
             padding-right: 7%;
         }
-        
+
         .faq .texte {
             margin-left: 1.5em;
             width: 90%;
             text-align: justify;
         }
-        
+
         .faq .texte p {
             font-size: 1em;
         }
-        
+
         footer {
             height: 15%;
             background-color: #fe4445;
         }
+
         /* Media Queries pour Tablettes */
-        
+
         @media (min-width: 620px) {
             section {
                 height: 85%;
             }
+
             section p {
                 font-size: 0.8em;
             }
+
             h2 {
                 font-size: 1.5em;
             }
+
             #myCarousel {
                 width: 100%;
             }
+
             .a-propos {
-                flex-direction: row;
+                flex-direction: column;
             }
+
             .a-propos:nth-child(even) .texte {
                 margin-right: 1.5em;
                 order: 0;
             }
+
             .a-propos:nth-child(odd) .texte {
                 margin-left: 1.5em;
                 order: 1;
             }
-            .a-propos .texte,
-            .a-propos img {
-                width: 50%;
-            }
+
             footer {
                 background-color: blueviolet;
             }
         }
+
         /* Media Queries pour Grands Écrans */
-        
+
         @media (min-width: 960px) {
             section {
                 height: 85%;
             }
-            section h2 {
-                font-size: 2em;
+
+            section .a-propos h2 {
+                font-size: 2.5vw;
             }
-            section p {
-                font-size: 1.2em;
+
+            section .a-propos p {
+                font-size: 1.5vw;
             }
+
             #myCarousel {
                 width: 60%;
                 margin: 0 auto;
                 ;
             }
+
             #carouselContain {
                 padding-top: 1.5em;
                 padding-bottom: 1.5em
             }
+
+            .a-propos {
+                flex-direction: row;
+            }
+
             .a-propos:nth-child(even) .texte {
                 margin-left: 1em;
                 order: 0;
             }
+
             .a-propos:nth-child(odd) .texte {
                 margin-right: 1em;
                 order: 1;
             }
+
+            .a-propos .texte,
+            .a-propos img {
+                width: 50%;
+            }
+
             .faq .texte {
                 width: 65%;
             }
+
             footer {
                 background-color: darkcyan;
             }
@@ -247,8 +283,10 @@
 
     <!-- Navbar ici -->
     <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
-        <a class="navbar-brand" href="index.html#"><img src="static/img/logo_ceves_1.jpg" style="height:50px;border-radius: 10px;"></a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <a class="navbar-brand" href="index.html#"><img src="static/img/logo_ceves_1.jpg"
+                style="height:50px;border-radius: 10px;"></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
 
@@ -308,7 +346,8 @@
                         </div>-->
 
                         <div class="carousel-item">
-                            <a href="https://docs.google.com/document/d/1lGwWG-mpM_d82YqhfWR7zGKhEn8HiOZczuc_IhhlwOQ/edit?usp=sharing" target="blank">
+                            <a href="https://docs.google.com/document/d/1lGwWG-mpM_d82YqhfWR7zGKhEn8HiOZczuc_IhhlwOQ/edit?usp=sharing"
+                                target="blank">
                                 <div class="carousel-caption">
                                     <h3>Activités de l'automne 2019</h3>
                                     <p>Découvrez les activités de la coalition à l'automne</p>
@@ -341,9 +380,13 @@
             <div class="a-propos">
                 <div class="texte">
                     <h2><b>Pourquoi la CEVES ?</b></h2>
-                    <p>On nous dit que le Québec et le Canada sont verts. On nous dit que les gouvernements, les entreprises et les institutions de partout sont en transition. Pourtant, on continue d’extraire le pétrole et le gaz du sol, de violer les territoires
-                        ancestraux des Premières Nations autochtones, d’ancrer nos économies dans l’extraction des ressources premières d’Afrique ou d’Amérique du Sud.
-                        <raph> C'est devant cette incohérence que nous, jeunes et moins jeunes de partout au Québec, avons décidé de nous rassembler sous un même mouvement. </raph><br> <br>
+                    <p>On nous dit que le Québec et le Canada sont verts. On nous dit que les gouvernements, les
+                        entreprises et les institutions de partout sont en transition. Pourtant, on continue d’extraire
+                        le pétrole et le gaz du sol, de violer les territoires
+                        ancestraux des Premières Nations autochtones, d’ancrer nos économies dans l’extraction des
+                        ressources premières d’Afrique ou d’Amérique du Sud.
+                        <raph> C'est devant cette incohérence que nous, jeunes et moins jeunes de partout au Québec,
+                            avons décidé de nous rassembler sous un même mouvement. </raph><br> <br>
                     </p>
                 </div>
                 <img src="static/img/photos/C18.JPG" alt="Manif 27 septembre 2019 à Québec">
@@ -352,10 +395,17 @@
             <div class="a-propos">
                 <div class="texte">
                     <h2><b>Qui sommes-nous ?</b></h2>
-                    <p>Les populations étudiantes secondaires, collégiales et universitaires du Québec s’unissent pour réclamer des actions collectives radicales. La Coalition étudiante pour un virage environnemental et social (CEVES) rassemble ces étudiant.e.s
-                        de partout au Québec qui ont transformé leur peur en actions collectives. La justice environnementale doit nous amener à changer profondément notre société, dès maintenant. <br>
-                        <br> En nous alliant à tous ceux et toutes celles qui partagent cette vision - peuples autochtones, associations étudiantes, centre de recherche, organisations environnementales et sociales - nous voulons ancrer notre démarche
-                        dans des principes d'inclusivité et de démocratie. Nous pensons que nous pourrons dépasser l’individualisme et proposer un modèle de société libéré des oppressions sur la terre et les êtres qui l'habitent. </p>
+                    <p>Les populations étudiantes secondaires, collégiales et universitaires du Québec s’unissent pour
+                        réclamer des actions collectives radicales. La Coalition étudiante pour un virage
+                        environnemental et social (CEVES) rassemble ces étudiant.e.s
+                        de partout au Québec qui ont transformé leur peur en actions collectives. La justice
+                        environnementale doit nous amener à changer profondément notre société, dès maintenant. <br>
+                        <br> En nous alliant à tous ceux et toutes celles qui partagent cette vision - peuples
+                        autochtones, associations étudiantes, centre de recherche, organisations environnementales et
+                        sociales - nous voulons ancrer notre démarche
+                        dans des principes d'inclusivité et de démocratie. Nous pensons que nous pourrons dépasser
+                        l’individualisme et proposer un modèle de société libéré des oppressions sur la terre et les
+                        êtres qui l'habitent. </p>
 
                 </div>
                 <img src="static/img/photos/DecLpsuPLF.jpg" alt="Manif 27 septembre 2019 Montréal">
@@ -364,13 +414,18 @@
             <div class="a-propos">
                 <div class="texte">
                     <h2><b>Quels sont nos moyens d'action ?</b></h2>
-                    <p>La CEVES adopte une approche combative, souhaitant mettre en oeuvre une escalade de moyens de pression permettant la défense de la justice environnementale. S’imposant désormais comme un des plus gros mouvements sociaux au Québec,
-                        elle a notamment organisé des événements à grande échelle, comme les marches pour le climat du 15 mars et du 27 septembre, diverses manifestations locales ainsi que des occupations, tout en continuant d’alimenter les réflexions
+                    <p>La CEVES adopte une approche combative, souhaitant mettre en oeuvre une escalade de moyens de
+                        pression permettant la défense de la justice environnementale. S’imposant désormais comme un des
+                        plus gros mouvements sociaux au Québec,
+                        elle a notamment organisé des événements à grande échelle, comme les marches pour le climat du
+                        15 mars et du 27 septembre, diverses manifestations locales ainsi que des occupations, tout en
+                        continuant d’alimenter les réflexions
                         au sein des diverses bases militantes. <br> <br>
 
                     </p>
                 </div>
-                <img src="http://www.ceves.ca/static/img/photos/manifestation19avril2019_felixbosse-9.jpg" alt="Léo levant le poing dans la foule à la manif du 27 septembre 2019, Montréal">
+                <img src="http://www.ceves.ca/static/img/photos/manifestation19avril2019_felixbosse-9.jpg"
+                    alt="Léo levant le poing dans la foule à la manif du 27 septembre 2019, Montréal">
             </div>
 
             <div class="a-propos reven" id="revendication">
@@ -379,26 +434,38 @@
                     <!-- Faire un OL/Li avec cette section , parce que c'est clairement ça, en fait-->
 
                     <p>
-                        Concrètement, la CEVES revendique la mise en place immédiate d’un plan d’urgence climatique s’adressant aux gouvernements, aux entreprises, aux institutions éducatives et aux autres acteurs de la sphère publique. Ce plan doit s’ancrer fermement dans les
+                        Concrètement, la CEVES revendique la mise en place immédiate d’un plan d’urgence climatique
+                        s’adressant aux gouvernements, aux entreprises, aux institutions éducatives et aux autres
+                        acteurs de la sphère publique. Ce plan doit s’ancrer fermement dans les
                         sept principes suivants :
                     </p>
 
                     <ol>
                         <li>Respecter la science et les savoirs autochtones;</li>
-                        <li>L’adoption d’une loi climatique qui, par des cibles annuelles contraignantes, forcerait l’atteinte de la carboneutralité en 2030 et la réduction des émissions de gaz à effets de serre à un niveau équitable face au reste de la population
-                            mondiale selon sa capacité de rétention de carbone, la taille de sa population et son historique de pays colonisateur et industriel du Nord Global;
+                        <li>L’adoption d’une loi climatique qui, par des cibles annuelles contraignantes, forcerait
+                            l’atteinte de la carboneutralité en 2030 et la réduction des émissions de gaz à effets de
+                            serre à un niveau équitable face au reste de la population
+                            mondiale selon sa capacité de rétention de carbone, la taille de sa population et son
+                            historique de pays colonisateur et industriel du Nord Global;
                         </li>
-                        <li>Exiger la mise en œuvre complète de la Déclaration des Nations unies sur les droits des peuples autochtones, jusqu’à consultation des communautés autochtones concernées;</li>
+                        <li>Exiger la mise en œuvre complète de la Déclaration des Nations unies sur les droits des
+                            peuples autochtones, jusqu’à consultation des communautés autochtones concernées;</li>
                     </ol>
                 </div>
                 <div class="texte">
                     <ol start="4">
-                        <li>Assurer la protection des communautés vulnérables du Canada, particulièrement des communautés racisées qui sont touchées disproportionnellement par la crise climatique;</li>
-                        <li>Œuvrer en collaboration avec les populations du globe qui sont disproportionnellement affectées par la crise climatique en reconnaissant la responsabilité historique du Canada envers ces populations;</li>
-                        <li>Exiger la mise en œuvre à tous les paliers d’éducation de la Stratégie québécoise d’éducation en matière d’environnement et d’écocitoyenneté développée par la <a href="https://www.coalition-education-environnement-ecocitoyennete.org/"
-                                target="blank">
-                            Coalition Éducation, Environnement, Écocitoyenneté</a>;</li>
-                        <li>Exiger un arrêt complet et immédiat de tout projet d’exploration, d’exploitation et de transport d’hydrocarbures en parallèle à des formations professionnelles visant à faciliter la mobilité et le transfert de la main d’œuvre des
+                        <li>Assurer la protection des communautés vulnérables du Canada, particulièrement des
+                            communautés racisées qui sont touchées disproportionnellement par la crise climatique;</li>
+                        <li>Œuvrer en collaboration avec les populations du globe qui sont disproportionnellement
+                            affectées par la crise climatique en reconnaissant la responsabilité historique du Canada
+                            envers ces populations;</li>
+                        <li>Exiger la mise en œuvre à tous les paliers d’éducation de la Stratégie québécoise
+                            d’éducation en matière d’environnement et d’écocitoyenneté développée par la <a
+                                href="https://www.coalition-education-environnement-ecocitoyennete.org/" target="blank">
+                                Coalition Éducation, Environnement, Écocitoyenneté</a>;</li>
+                        <li>Exiger un arrêt complet et immédiat de tout projet d’exploration, d’exploitation et de
+                            transport d’hydrocarbures en parallèle à des formations professionnelles visant à faciliter
+                            la mobilité et le transfert de la main d’œuvre des
                             secteurs concernés vers ceux des énergies renouvelables.
                         </li>
                     </ol>
@@ -538,7 +605,7 @@
 
             </div>-->
             <!--<div class="a-propos"></div>-->
-            <footer class="a-propos">
+            <!-- <footer class="a-propos">
 
                 <section class="footer-liste">
                     <div class="footer-liste-item">
@@ -557,7 +624,7 @@
                             <li><a class="footer-a" href="#">Code morin</a></li>
                             <li><a class="footer-a" href="#">Charte</a></li>
                             <li><a class="footer-a" href="#">Procès-verbaux</a></li>
-        
+
                         </ul>
                     </div>
                     <div class="footer-liste-item">
@@ -568,7 +635,7 @@
                             <li><a class="footer-a" href="#">Fax:(514) 982-3428</a></li>
                         </ul>
                     </div>
-        
+
                 </section>
                 <section class="footer-icons">
                     <ul class="footer-icons-li">
@@ -581,15 +648,15 @@
                         <li>
                             <a href="#"><img src="../image/instagram.png" alt=""></a>
                         </li>
-        
+
                     </ul>
                 </section>
-                
-            </footer>
+
+            </footer> -->
             <!--<p><br><b>Pour contacter les administrateurs.trices de ce site :</b> admin@ceves.ca</p>-->
         </section>
 
-    
+
 
     </div>
 

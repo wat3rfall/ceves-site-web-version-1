@@ -51,6 +51,8 @@ section {
 
 }
 
+
+
 section img {
     border-radius: 3px;
     -webkit-box-shadow: -1px 9px 24px -1px rgba(0, 0, 0, 0.2);
@@ -63,8 +65,6 @@ section img {
     width: 100%;
 
 }
-
-
 
 
 #carouselContain {
@@ -212,27 +212,17 @@ footer {
 
 
 /* Media Queries pour Tablettes */
+/*Anciennement 620px*/
 @media (min-width: 620px) {
     section {
         height: 85%;
 
     }
 
-    section p {
-        font-size: 0.8em;
-    }
-
-    h2 {
-        font-size: 1.5em;
-    }
-
     #myCarousel {
         width: 100%;
     }
 
-    .a-propos {
-        flex-direction: row;
-    }
 
     .a-propos:nth-child(even) .texte {
         margin-right: 1.5em;
@@ -266,27 +256,16 @@ footer {
 
     }
 
-    section h2 {
-        font-size: 2em;
-    }
-
-    section p {
-        font-size: 1.2em;
-    }
 
     #myCarousel {
         width: 60%;
         margin: 0 auto;
-        ;
+        
     }
 
     #carouselContain {
         padding-top: 1.5em;
         padding-bottom: 1.5em
-    }
-
-    .a-propos img {
-        /*height: 400px;*/
     }
 
 
